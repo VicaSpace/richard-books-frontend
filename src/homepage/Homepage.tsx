@@ -1,17 +1,30 @@
 import { Container } from '@chakra-ui/react'
-import React from 'react'
-import BookHorizontalSlider, {
-  Book
-} from '../bookhorizontalslider/BookHorizontalSlider'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+import BookHorizontalSlider from '../bookhorizontalslider/BookHorizontalSlider'
 import NavBar from '../navbar/NavBar'
-import DATA from './data'
 import HeadingSection from './HeadingSection'
-import PopularAuthors, { Author } from './PopularAuthors'
+import PopularAuthors from './PopularAuthors'
 import Premium from './Premium'
 
 const HomePage: React.FC<{}> = () => {
-  const books: Book[] = DATA.books
-  const authors: Author[] = DATA.authors
+  const [books, setBooks] = useState([])
+  const [authors, setAuthors] = useState([])
+
+  useEffect(() => {
+    axios
+      .get('http://localhost:3001/api/books')
+      .then((res) => {
+        setBooks(res.data)
+      })
+      .catch((err) => console.log(err))
+    axios
+      .get('http://localhost:3001/api/authors')
+      .then((res) => {
+        setAuthors(res.data)
+      })
+      .catch((err) => console.log(err))
+  }, [])
 
   return (
     <Container>

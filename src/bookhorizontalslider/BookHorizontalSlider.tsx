@@ -1,5 +1,9 @@
 import { Container } from '@chakra-ui/react'
 import React from 'react'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import BookItem from './BookItem'
 
 export interface Book {
   id: number
@@ -13,15 +17,22 @@ export interface Book {
 }
 
 const BookHorizontalSlider: React.FC<{ books: Book[] }> = ({ books }) => {
+  const settings = {
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
+
   return (
     <Container>
-      <ul>
+      <Slider {...settings}>
         {books.map((book) => (
           <li key={book.id}>
-            {book.name}, {book.authorName}, {book.rating}, {book.price}
+            <BookItem book={book} />
           </li>
         ))}
-      </ul>
+      </Slider>
     </Container>
   )
 }
