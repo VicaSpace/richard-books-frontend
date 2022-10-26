@@ -3,7 +3,7 @@ import React from 'react'
 
 const HeadingSection: React.FC<{}> = () => {
   return (
-    <Flex justifyContent="space-between" p="5">
+    <Flex justifyContent="space-between" p="5" mb="3">
       <Flex flexDirection="column">
         <Heading fontFamily="Average" fontWeight="400" fontSize="28px" color="#333333">Hi Richard</Heading>
         <Text fontFamily='Average' fontWeight="400" fontSize="16px" lineHeight="19px">What are you reading today?</Text>

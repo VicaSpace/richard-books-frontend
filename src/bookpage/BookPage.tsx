@@ -25,11 +25,11 @@ const BookPage: React.FC<{}> = () => {
     if (bookmarkedIds.includes(id)) {
       const newBookmarkedIds = bookmarkedIds.filter((e) => e !== id)
       localStorage.setItem('bookmarked', JSON.stringify(newBookmarkedIds))
-      setBooks(ratedBooks.filter((book) => newBookmarkedIds.includes(book.id)))
+      // setBooks(ratedBooks.filter((book) => newBookmarkedIds.includes(book.id)))
     } else {
       bookmarkedIds.push(id)
       localStorage.setItem('bookmarked', JSON.stringify(bookmarkedIds))
-      setBooks(ratedBooks.filter((book) => bookmarkedIds.includes(book.id)))
+      // setBooks(ratedBooks.filter((book) => bookmarkedIds.includes(book.id)))
     }
   }
 

@@ -47,7 +47,9 @@ const BookDetail: React.FC<{}> = () => {
           />
         )}
       </Flex>
-      <Image src={book.img} alt={book.name} mb="5" />
+      <Flex alignContent="center" justifyContent="center">
+        <Image src={book.img} alt={book.name} mb="5" />
+      </Flex>
       <Heading fontSize="30" textAlign="center">{book.name}</Heading>
       <Text color="gray" fontSize="20" textAlign="center" mb="5">{book.authorName}</Text>
       <Text textAlign="center" mb="5">{book.rating} / <Text color="gray" display="inline">5</Text></Text>

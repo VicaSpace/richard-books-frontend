@@ -41,6 +41,7 @@ const BookCard: React.FC<{
         <Image
           src={bookmarkImg}
           alt="bookmark"
+          w="20px"
           onClick={() => bookmark(book.id)}
         />
       )}
@@ -48,6 +49,7 @@ const BookCard: React.FC<{
         <Image
           src={bookmarkYellowImg}
           alt="bookmark-yellow"
+          w="20px"
           onClick={() => unbookmark(book.id)}
         />
       )}
