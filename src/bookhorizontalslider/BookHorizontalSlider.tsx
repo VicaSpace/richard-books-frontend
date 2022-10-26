@@ -7,6 +7,9 @@ export interface Book {
   authorName: string
   rating: number
   price: number
+  genre: string
+  description: string
+  img: string
 }
 
 const BookHorizontalSlider: React.FC<{ books: Book[] }> = ({ books }) => {
