@@ -1,13 +1,13 @@
+import { Container } from '@chakra-ui/react'
 import React from 'react'
-import './Homepage.css'
+import HeadingSection from './headingsection/HeadingSection'
 
-const Homepage: React.FC<{ showTitle: boolean }> = ({ showTitle }) => {
+const HomePage: React.FC<{}> = () => {
   return (
-    <div className="homepage-title">
-      {showTitle && <p data-testid="title-test">Hello</p>}
-      <p>Homepage</p>
-    </div>
+    <Container>
+      <HeadingSection />
+    </Container>
   )
 }
 
-export default Homepage
+export default HomePage
