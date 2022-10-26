@@ -7,7 +7,8 @@ import ReduxComponent from './redux/ReduxComponent'
 import exampleStore from './redux/boilerplate/store'
 import SearchPage from './searchpage/SearchPage'
 import BookPage from './bookpage/BookPage'
-import BookDetail from './bookpage/bookdetail/BookDetail'
+import BookDetail from './bookpage/BookDetail'
+import NavBar from './navbar/NavBar'
 
 const App: React.FC<{}> = () => {
   return (
@@ -28,6 +29,7 @@ const App: React.FC<{}> = () => {
             }
           />
         </Routes>
+        <NavBar />
       </BrowserRouter>
     </>
   )
