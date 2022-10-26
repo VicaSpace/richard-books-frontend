@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing homepage should render the homepage correctly 1`] = `
+<div>
+  <div
+    class="homepage-title"
+  >
+    <p
+      data-testid="title-test"
+    >
+      Hello
+    </p>
+    <p>
+      Homepage
+    </p>
+  </div>
+</div>
+`;
