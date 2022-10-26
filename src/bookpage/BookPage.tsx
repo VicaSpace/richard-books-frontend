@@ -2,6 +2,7 @@ import { Button, Container, Heading } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { Book } from '../bookhorizontalslider/BookHorizontalSlider'
 import DATA from '../homepage/data'
+import NavBar from '../navbar/NavBar'
 import BookCard from './BookCard'
 
 const BookPage: React.FC<{}> = () => {
@@ -44,6 +45,7 @@ const BookPage: React.FC<{}> = () => {
           </li>
         ))}
       </ul>
+      <NavBar />
     </Container>
   )
 }

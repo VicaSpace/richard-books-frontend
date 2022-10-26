@@ -8,11 +8,11 @@ import exampleStore from './redux/boilerplate/store'
 import SearchPage from './searchpage/SearchPage'
 import BookPage from './bookpage/BookPage'
 import BookDetail from './bookpage/BookDetail'
-import NavBar from './navbar/NavBar'
+import { ChakraProvider } from '@chakra-ui/react'
 
 const App: React.FC<{}> = () => {
   return (
-    <>
+    <ChakraProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -29,9 +29,8 @@ const App: React.FC<{}> = () => {
             }
           />
         </Routes>
-        <NavBar />
       </BrowserRouter>
-    </>
+    </ChakraProvider>
   )
 }
 

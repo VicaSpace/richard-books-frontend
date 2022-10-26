@@ -1,11 +1,20 @@
-import { Button, Image, Text } from '@chakra-ui/react'
+import { Image, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Book } from '../bookhorizontalslider/BookHorizontalSlider'
+import bookmarkImg from './bookmark.png'
+import bookmarkYellowImg from './bookmark-yellow.png'
 
-const BookCard: React.FC<{ book: Book, onBookmarkClick: (id: number) => void }> = ({ book, onBookmarkClick }) => {
+const BookCard: React.FC<{
+  book: Book
+  onBookmarkClick: (id: number) => void
+}> = ({ book, onBookmarkClick }) => {
   const bookmarkedIdsStr: string = localStorage.getItem('bookmarked') ?? '[]'
   const bookmarkedIds: number[] = JSON.parse(bookmarkedIdsStr)
-  const [isBookmarked, setIsBookmarked] = useState(bookmarkedIds.includes(book.id))
+  const [isBookmarked, setIsBookmarked] = useState(
+    bookmarkedIds.includes(book.id)
+  )
+  const navigate = useNavigate()
 
   const unbookmark = (id: number): void => {
     onBookmarkClick(id)
@@ -19,13 +28,29 @@ const BookCard: React.FC<{ book: Book, onBookmarkClick: (id: number) => void }> 
 
   return (
     <>
-      <Image src={book.img} alt={book.name} />
+      <Image
+        src={book.img}
+        alt={book.name}
+        onClick={() => navigate(`/books/${book.id}`)}
+      />
       <Text>{book.rating}</Text>
       <Text>{book.name}</Text>
       <Text>{book.authorName}</Text>
       <Text>{book.price}</Text>
-      {!isBookmarked && <Button onClick={() => bookmark(book.id)}>Bookmark</Button>}
-      {isBookmarked && <Button onClick={() => unbookmark(book.id)}>Unbookmark</Button>}
+      {!isBookmarked && (
+        <Image
+          src={bookmarkImg}
+          alt="bookmark"
+          onClick={() => bookmark(book.id)}
+        />
+      )}
+      {isBookmarked && (
+        <Image
+          src={bookmarkYellowImg}
+          alt="bookmark-yellow"
+          onClick={() => unbookmark(book.id)}
+        />
+      )}
     </>
   )
 }

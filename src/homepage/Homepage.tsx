@@ -3,6 +3,7 @@ import React from 'react'
 import BookHorizontalSlider, {
   Book
 } from '../bookhorizontalslider/BookHorizontalSlider'
+import NavBar from '../navbar/NavBar'
 import DATA from './data'
 import HeadingSection from './HeadingSection'
 import PopularAuthors, { Author } from './PopularAuthors'
@@ -18,6 +19,7 @@ const HomePage: React.FC<{}> = () => {
       <BookHorizontalSlider books={books} />
       <Premium />
       <PopularAuthors authors={authors} />
+      <NavBar />
     </Container>
   )
 }
