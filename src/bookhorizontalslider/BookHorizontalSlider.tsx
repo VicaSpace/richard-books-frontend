@@ -28,9 +28,7 @@ const BookHorizontalSlider: React.FC<{ books: Book[] }> = ({ books }) => {
     <Container>
       <Slider {...settings}>
         {books.map((book) => (
-          <li key={book.id}>
-            <BookItem book={book} />
-          </li>
+          <BookItem key={book.id} book={book} />
         ))}
       </Slider>
     </Container>
