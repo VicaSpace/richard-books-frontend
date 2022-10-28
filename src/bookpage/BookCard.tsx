@@ -1,7 +1,7 @@
 import { Image, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Book } from '../bookhorizontalslider/BookHorizontalSlider'
+import { Book } from '../components/bookHorizontalSlider/BookHorizontalSlider'
 import bookmarkImg from './bookmark.png'
 import bookmarkYellowImg from './bookmark-yellow.png'
 

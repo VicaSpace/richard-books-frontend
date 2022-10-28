@@ -1,0 +1,31 @@
+.heading-section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 24px 32px 20px;
+}
+
+.heading-section-vertical-divider {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-section-vertical-divider h1 {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.heading-section-vertical-divider p {
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  margin-top: 1px;
+  color: #828282;
+}
+
+.heading-section-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}

@@ -1,6 +1,6 @@
 import { Button, Container, Heading } from '@chakra-ui/react'
 import React, { useState } from 'react'
-import { Book } from '../bookhorizontalslider/BookHorizontalSlider'
+import { Book } from '../components/bookHorizontalSlider/BookHorizontalSlider'
 import DATA from '../homepage/data'
 import NavBar from '../navbar/NavBar'
 import BookCard from './BookCard'

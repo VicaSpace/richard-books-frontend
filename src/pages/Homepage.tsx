@@ -1,11 +1,10 @@
-import { Container } from '@chakra-ui/react'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import BookHorizontalSlider from '../bookhorizontalslider/BookHorizontalSlider'
+import BookHorizontalSlider from '../components/bookHorizontalSlider/BookHorizontalSlider'
 import NavBar from '../navbar/NavBar'
-import HeadingSection from './HeadingSection'
-import PopularAuthors from './PopularAuthors'
-import Premium from './Premium'
+import HeadingSection from '../components/headingSection/HeadingSection'
+import PopularAuthors from '../components/popularAuthors/PopularAuthors'
+import Premium from '../components/premium/Premium'
 
 const HomePage: React.FC<{}> = () => {
   const [books, setBooks] = useState([])
@@ -27,13 +26,13 @@ const HomePage: React.FC<{}> = () => {
   }, [])
 
   return (
-    <Container>
+    <>
       <HeadingSection />
       <BookHorizontalSlider books={books} />
       <Premium />
       <PopularAuthors authors={authors} />
       <NavBar />
-    </Container>
+    </>
   )
 }
 

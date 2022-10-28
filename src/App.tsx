@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import HomePage from './homepage/HomePage'
+import HomePage from './pages/Homepage'
 import './App.css'
 import SearchPage from './searchpage/SearchPage'
 import BookPage from './bookpage/BookPage'

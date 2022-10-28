@@ -1,6 +1,6 @@
 import { Heading } from '@chakra-ui/react'
 import React from 'react'
-import AuthorItem from './AuthorItem'
+import AuthorItem from '../authorItem/AuthorItem'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'

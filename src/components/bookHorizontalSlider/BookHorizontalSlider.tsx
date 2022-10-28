@@ -3,7 +3,7 @@ import React from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import BookItem from './BookItem'
+import BookItem from '../bookItem/BookItem'
 
 export interface Book {
   id: number
@@ -20,7 +20,7 @@ const BookHorizontalSlider: React.FC<{ books: Book[] }> = ({ books }) => {
   const settings = {
     infinite: false,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1
   }
 
