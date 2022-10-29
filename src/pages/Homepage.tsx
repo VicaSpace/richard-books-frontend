@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import BookHorizontalSlider from '../components/bookHorizontalSlider/BookHorizontalSlider'
-import NavBar from '../navbar/NavBar'
+import NavBar from '../utils/sharedComponents/navBar/NavBar'
 import HeadingSection from '../components/headingSection/HeadingSection'
 import PopularAuthors from '../components/popularAuthors/PopularAuthors'
 import Premium from '../components/premium/Premium'
@@ -26,13 +26,13 @@ const HomePage: React.FC<{}> = () => {
   }, [])
 
   return (
-    <>
+    <div className='homepage-container'>
       <HeadingSection />
       <BookHorizontalSlider books={books} />
       <Premium />
       <PopularAuthors authors={authors} />
       <NavBar />
-    </>
+    </div>
   )
 }
 

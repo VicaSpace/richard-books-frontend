@@ -2,7 +2,7 @@ import { Button, Container, Heading } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { Book } from '../components/bookHorizontalSlider/BookHorizontalSlider'
 import DATA from '../homepage/data'
-import NavBar from '../navbar/NavBar'
+import NavBar from '../utils/sharedComponents/navBar/NavBar'
 import BookCard from './BookCard'
 
 const BookPage: React.FC<{}> = () => {
