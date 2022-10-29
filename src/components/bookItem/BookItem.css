@@ -1,0 +1,57 @@
+.book-item-container {
+  width: 111px;
+}
+
+.book-item-rating-container {
+  position: relative;
+}
+
+.book-item-rating {
+  background: #333333;
+  border-radius: 8.44px 0 0 0;
+  position: absolute;
+  width: 37px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.book-item-star {
+  margin-right: 3px;
+  color: #ffd335;
+}
+
+.book-item-img {
+  height: 150px;
+  border-radius: 8.5px;
+  box-shadow: 4.46px 2.81px;
+  margin-bottom: 4px;
+}
+
+.book-item-name {
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.book-item-author {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 14.6px;
+  color: #828282
+}
+
+.book-item-price {
+  font-size: 10px;
+  line-height: 12.16px;
+  margin-bottom: 25px;
+}
+
+.book-item-emphasize {
+  font-size: 16px;
+  line-height: 19px;
+}

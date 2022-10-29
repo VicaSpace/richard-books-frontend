@@ -1,0 +1,9 @@
+.book-slider-container {
+  display: flex;
+  overflow: auto;
+  margin-left: 24px;
+}
+
+.book-slider-item {
+  padding-right: 24px;
+}
