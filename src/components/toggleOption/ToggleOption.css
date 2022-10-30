@@ -1,0 +1,28 @@
+.toggle-option-button-selected {
+  margin-right: 0.5rem;
+  width: 7.1rem;
+  height: 2.1rem;
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.81rem;
+  color: white;
+  background-color: black;
+  font-weight: 700;
+  font-family: 'Open Sans', 'sans-serif';
+  border: 0;
+}
+
+.toggle-option-button-not-selected {
+  margin-right: 0.5rem;
+  width: 7.1rem;
+  height: 2.1rem;
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.81rem;
+  color: #9797aa;
+  background-color: white;
+  font-weight: 300;
+  font-family: 'Open Sans', 'sans-serif';
+  border: 0;
+  font-style: italic;
+}

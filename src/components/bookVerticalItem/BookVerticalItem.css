@@ -1,0 +1,67 @@
+.book-vertical-item-container {
+  display: flex;
+  padding: 0.8rem 1.5rem;
+  margin-top: 0.7rem;
+}
+
+.book-vertical-item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-vertical-item-img img {
+  height: 5rem;
+  margin-right: 1rem;
+  box-shadow: 0.145rem 0.09rem;
+  border-radius: 0.27rem;
+}
+
+.book-vertical-item-middle {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-vertical-item-rating {
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+}
+
+.book-vertical-item-star {
+  color: #FFD335;
+  height: 0.6rem;
+}
+
+.book-vertical-item-name {
+  font-size: 0.875rem;
+  line-height: 1.1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.book-vertical-item-author {
+  font-size: 0.75rem;
+  line-height: 0.94rem;
+  color: #9797AA;
+}
+
+.book-vertical-item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-vertical-item-bookmark-container {
+  display: flex;
+  justify-content: end;
+}
+
+.book-vertical-item-bookmark {
+  height: 0.9375rem;
+}
+
+.book-vertical-item-bookmark-yellow {
+  color: #FBE207;
+}
