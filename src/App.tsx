@@ -49,7 +49,7 @@ const App: React.FC<{}> = () => {
           path="/"
           element={<HomePage books={books} authors={authors} />}
         />
-        <Route path="/search" element={<SearchPage />} />
+        <Route path="/search" element={<SearchPage books={books} />} />
         <Route path="/books" element={<BookPage books={books} />} />
         <Route path="/books/:id" element={<BookDetailPage books={books} />} />
         <Route path="*" element={<Navigate replace to="/" />} />

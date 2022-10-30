@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiFillStar } from 'react-icons/ai'
 import { useNavigate } from 'react-router'
-import { Book } from '../../App'
+import { Book } from '../../../App'
 import './BookItem.css'
 
 const BookItem: React.FC<{ book: Book }> = ({ book }) => {

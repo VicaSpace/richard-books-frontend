@@ -1,5 +1,5 @@
 import React from 'react'
-import BookHorizontalSlider from '../../components/bookHorizontalSlider/BookHorizontalSlider'
+import BookHorizontalSlider from '../../utils/sharedComponents/bookHorizontalSlider/BookHorizontalSlider'
 import NavBar from '../../utils/sharedComponents/navBar/NavBar'
 import HeadingSection from '../../components/headingSection/HeadingSection'
 import PopularAuthors from '../../components/popularAuthors/PopularAuthors'

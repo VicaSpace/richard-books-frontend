@@ -1,5 +1,5 @@
 import React from 'react'
-import { Book } from '../../App'
+import { Book } from '../../../App'
 import BookItem from '../bookItem/BookItem'
 import './BookHorizontalSlider.css'
 
