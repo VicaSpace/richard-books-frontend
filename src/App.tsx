@@ -51,7 +51,7 @@ const App: React.FC<{}> = () => {
         />
         <Route path="/search" element={<SearchPage />} />
         <Route path="/books" element={<BookPage books={books} />} />
-        <Route path="/books/:id" element={<BookDetailPage />} />
+        <Route path="/books/:id" element={<BookDetailPage books={books} />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
     </BrowserRouter>

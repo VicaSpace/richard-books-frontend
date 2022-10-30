@@ -30,7 +30,7 @@
 }
 
 .book-vertical-item-star {
-  color: #FFD335;
+  color: #ffd335;
   height: 0.6rem;
 }
 
@@ -44,7 +44,7 @@
 .book-vertical-item-author {
   font-size: 0.75rem;
   line-height: 0.94rem;
-  color: #9797AA;
+  color: #9797aa;
 }
 
 .book-vertical-item-right {
@@ -55,7 +55,7 @@
 
 .book-vertical-item-bookmark-container {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .book-vertical-item-bookmark {
@@ -63,5 +63,5 @@
 }
 
 .book-vertical-item-bookmark-yellow {
-  color: #FBE207;
+  color: #fbe207;
 }
